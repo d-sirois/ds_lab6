@@ -3,6 +3,14 @@
 
 import sys
 
+# print the menu
+def print_menu():
+    print('Menu')
+    print('-------------')
+    print('1. Encode')
+    print('2. Decode')
+    print('3. Quit\n\n')
+
 # encode a password
 def encode(password):
     encoded_digits = ['3', '4', '5', '6', '7', '8', '9', '0', '1', '2']
@@ -20,11 +28,7 @@ if __name__ == '__main__':
     encoded_password = ''
     
     while True:
-        print('Menu')
-        print('-------------')
-        print('1. Encode')
-        print('2. Decode')
-        print('3. Quit\n\n')
+        print_menu()
         print('Please enter an option:', end=' ')
         choice = int(input())
         
